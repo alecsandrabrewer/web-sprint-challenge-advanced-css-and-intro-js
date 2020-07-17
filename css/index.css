@@ -138,68 +138,70 @@ button:hover{
 
 /*--------------- Mobile Query: 500px -------------------*/
 
+@media (max-width:500px){
+    /*HEADER STYLES */
+    header{
+        display:flex;
+        justify-content: center;
+    }
+    nav{
+        width:55%;
+        display:flex;
+        justify-content:space-evenly;
+        margin-top:5%;
+    }
+    nav a{
+        color:#626262;
+        font-size: 1.5rem;
+    }
+    nav span{
+        border-left:2px solid #626262;
+    }
 
-/*HEADER STYLES */
-header{
-    display:flex;
-    justify-content: center;
-}
-nav{
-    width:55%;
-    display:flex;
-    justify-content:space-evenly;
-    margin-top:5%;
-}
-nav a{
-    color:#626262;
-    font-size: 1.5rem;
-}
-nav span{
-    border-left:2px solid #626262;
+    /*Title Section Styles*/
+    .title-container{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .title-container div {	
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg');		
+        background-position: center;	
+        color: white;	
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:45vh;
+        margin:5% 0;
+    }	
+    .title-container div h1{
+        font-size: 4.5rem;
+    }
+
+    /*Artists Section Styles */
+    .artists-container{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width:80%;
+        margin:0 auto;
+    }
+    .artist{
+        width:70%;
+        text-align:center;
+        font-size: 1rem;
+    }
+    .artist a{
+        font-size:2rem;
+    }
+    .artist .bio{
+        width:98%;
+    }
+    .artist img{
+        width:100%;
+        height: 20vh;
+    }
 }
 
-/*Title Section Styles*/
-.title-container{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.title-container div {	
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg');		
-    background-position: center;	
-    color: white;	
-    width:100%;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height:45vh;
-    margin:5% 0;
-}	
-.title-container div h1{
-    font-size: 4.5rem;
-}
-
-/*Artists Section Styles */
-.artists-container{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    width:80%;
-    margin:0 auto;
-}
-.artist{
-    width:70%;
-    text-align:center;
-    font-size: 1rem;
-}
-.artist a{
-    font-size:2rem;
-}
-.artist .bio{
-    width:98%;
-}
-.artist img{
-    width:100%;
-    height: 20vh;
-}
